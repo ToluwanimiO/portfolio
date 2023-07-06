@@ -32,6 +32,7 @@ a,
   body {
     display: flex;
     place-items: center;
+    background-color: #181818;
   }
 
   #app {
@@ -49,6 +50,9 @@ a,
   .d-md-none{
     display: none !important;
   }
+}
+.bg-dark{
+  background-color: #181818;
 }
 .d-none {
   display: none !important;
