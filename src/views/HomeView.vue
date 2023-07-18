@@ -20,7 +20,7 @@
 .home {
     height: 100vh;
     height: 100vh;
-    display: flex;
+    margin-top: 20px;
     align-items: center;
 
     /* background-image: url("@/assets/toluwanimi.jpg"); */
@@ -37,6 +37,7 @@
     .home {
         background: linear-gradient(to right, #181818 0%, #181818 20%, white 20%, white 100%);
         margin: -4rem;
+        display: flex;
     }
 }
 /* display: inline-block;

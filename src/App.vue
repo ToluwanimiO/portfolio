@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import NavBar from './components/NavBar.vue'
 import AboutMe from './components/AboutMe.vue'
 import Contact from './components/Contact.vue'
 import { ref, onMounted } from 'vue'
@@ -44,14 +45,15 @@ onMounted(() => {
           @mouseleave="hoverStatus[`route${index+1}`] = false"
           :class="{ 'white': route.path == routeVar.path,'off-white': route.path != routeVar.path}"
         >
-          0{{index}}&nbsp;&nbsp; &#8212;&#8212;<span v-if="hoverStatus[`route${index+1}`]">&#8212;</span>
+          0{{index}}&nbsp;&nbsp; &#8212;&#8212;
+          <span v-if="hoverStatus[`route${index+1}`]">&#8212;</span>
           &nbsp;&nbsp; {{route.text}}
         </RouterLink>
       </nav>
       <Contact/>
     </div>
   </header>
-
+    <NavBar />
   <RouterView/>
 </template>
 <style scoped>
