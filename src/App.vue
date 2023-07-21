@@ -50,10 +50,11 @@ onMounted(() => {
           &nbsp;&nbsp; {{route.text}}
         </RouterLink>
       </nav>
+
       <Contact/>
     </div>
   </header>
-    <NavBar />
+  <NavBar/>
   <RouterView/>
 </template>
 <style scoped>
