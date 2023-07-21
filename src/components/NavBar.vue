@@ -4,11 +4,13 @@ import { ref } from 'vue'
 const state = ref(false)
 const toggleNav = () => {
     state.value = !state.value
-    document.getElementById('myNav').style.height = !state.value ? '0%' : '100%'
+    let myElement = document.getElementById('myNav')!
+    myElement.style.height = !state.value ? '0%' : '100%'
 }
 const closeNav = () => {
     state.value = false
-    document.getElementById('myNav').style.height = '0%'
+    let myElement = document.getElementById('myNav')!
+    myElement.style.height = '0%'
 }
 const navRoutes = [
     {
