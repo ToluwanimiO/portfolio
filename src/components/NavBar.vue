@@ -124,7 +124,7 @@ const navRoutes = [
     padding: 0px 20px;
 }
 .img-style {
-    width: 50%;
+    width: 40%;
 }
 .hamburger__toggle {
     position: relative;
