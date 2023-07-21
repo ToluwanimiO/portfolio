@@ -2,25 +2,127 @@
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 const state = ref(false)
-const toggle = () => {
+const toggleNav = () => {
     state.value = !state.value
+    document.getElementById('myNav').style.height = !state.value ? '0%' : '100%'
 }
+const closeNav = () => {
+    state.value = false
+    document.getElementById('myNav').style.height = '0%'
+}
+const navRoutes = [
+    {
+        path: '/',
+        text: 'Home'
+    },
+    {
+        path: '/projects',
+        text: 'Projects'
+    },
+    {
+        path: '/resume',
+        text: 'Resume'
+    },
+    {
+        path: '/contact',
+        text: 'Contact'
+    }
+]
+// const closeNav = () => {
+//     state.value = !state.value
+//     document.getElementById('myNav').style.height = '0%'
+// }
 </script>
 
 <template>
-  <nav class="d-lg-none d-md-show bg-dark">
-    <span class="is-flex justify-between pad">
-      Toluwanimi
-      <button @click="toggle" class="hamburger__toggle" :class="{'open':state}">
-        <span class="hamburger__icon"></span>
-      </button>
-    </span>
-  </nav>
+  <main class="mb-30 d-lg-none d-md-show">
+    <nav class="bg-dark mb-20">
+      <span class="is-flex justify-between pad">
+        <img src="../assets/toluwanimi_text_logo.png" class="img-style">
+        <button @click="toggleNav" class="hamburger__toggle" :class="{'open':state}">
+          <span class="hamburger__icon"></span>
+        </button>
+      </span>
+    </nav>
+    <div id="myNav" class="overlay">
+      <!-- <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a> -->
+      <div class="overlay-content">
+        <RouterLink
+          @click="closeNav"
+          v-for="(route, index) in navRoutes"
+          :key="index"
+          :to="route.path"
+        >{{route.text}}</RouterLink>
+        <span class="white mt-50">Connect With Me</span>
+        <span>hello@toluwanimi.dev</span>
+        <div class="mt-10">
+          <i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;&nbsp;
+          <i class="fa fa-linkedin-square fa-2x">&nbsp;</i>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+  </main>
 </template>
 
-<style scoped>
+<style>
+/* body {
+    overflow-y: hidden;
+    height: 100vh;
+} */
+.line {
+    border-top: 1px solid #818181;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    /* top: 0; */
+    left: 0;
+    background-color: #181818;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+.overlay span {
+    padding: 1px;
+    font-size: 20px;
+    display: block;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
 .pad {
-    padding: 5px 20px;
+    padding: 0px 20px;
+}
+.img-style {
+    width: 50%;
 }
 .hamburger__toggle {
     position: relative;
