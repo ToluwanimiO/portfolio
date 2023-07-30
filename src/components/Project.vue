@@ -1,12 +1,25 @@
 <template>
    <div class="project-div">
-     <p class="text-bold white font-lg">Project Name</p>
-     <span class="d-block mb-50">Description</span>
-     <span class="d-block">Languages</span>
-     <span>Live Code </span>
+     <p class="text-bold white font-lg">{{project.name}}</p>
+     <span class="d-block mb-50">{{project.description}}</span>
+     <span class="d-block">
+         <span v-for="(language,index) in project.languages" :key="index">
+             {{language}}<span v-if="!(project.languages.length-1 == index)"> + </span>
+         </span>
+     </span>
+     <a class="off-white" target="_blank" :href="project.liveUrl"><span class="mr-10"><i class="fa fa-eye"></i> Live</span></a>
+         
+       <a class="off-white" target="_blank" :href="project.codeUrl"> <span><i class="fa fa-code-fork"></i>  Code </span></a>
    </div>
 </template>
-
+<script setup lang="ts">
+const props = defineProps({
+  project:{
+    type: Object,
+    default: () => {},
+  }
+});
+</script>
 <style>
     .project-div{
         padding: 10%;

@@ -3,7 +3,7 @@
     <!-- do projects in such a way that I can update the items in the project without redploying my code and edit or delete previous codes -->
    <el-row>
      <el-col v-for="(project,index) in projects" :key="index" :span="24" :md="12">
-       <Project />
+       <Project :project="project"/>
      </el-col>
    </el-row>
    
@@ -14,11 +14,11 @@ import Vue,{ref} from 'vue'
 import Project from "../components/Project.vue"
 const projects = [
   {
-    name:'ProjectName',
-    description:'Description',
-    languages:['React','Vue'],
-    liveUrl:'url-live',
-    codeUrl:'code-url'
+    name:'toluwanimi-portfolio',
+    description:'My Porfolio Website',
+    languages:['Vue','NodeJS'],
+    liveUrl:'https://toluwanimi-portfolio.netlify.app/',
+    codeUrl:'https://github.com/ToluwanimiO/portfolio'
   },
   {
     name:'ProjectName',

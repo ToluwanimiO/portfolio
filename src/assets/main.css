@@ -117,9 +117,14 @@ body {
 .mr-5 {
   margin-right: 5px !important;
 }
-
+.mr-10 {
+  margin-right: 10px !important;
+}
 .text-bold {
   font-weight: 600;
+}
+.text-cursor {
+  cursor: pointer;
 }
 
 .font-lg {
