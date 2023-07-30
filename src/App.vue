@@ -45,8 +45,7 @@ onMounted(() => {
           @mouseleave="hoverStatus[`route${index+1}`] = false"
           :class="{ 'white': route.path == routeVar.path,'off-white': route.path != routeVar.path}"
         >
-          0{{index}}&nbsp;&nbsp; &#8212;&#8212;
-          <span v-if="hoverStatus[`route${index+1}`]">&#8212;</span>
+          0{{index}}&nbsp;&nbsp;&#8212;&#8212;<span v-if="hoverStatus[`route${index+1}`]">&#8212;</span>
           &nbsp;&nbsp; {{route.text}}
         </RouterLink>
       </nav>
