@@ -108,9 +108,14 @@ body {
 .mt-10 {
   margin-top: 10px;
 }
-
+.mt-5 {
+  margin-top: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
+}
+.mr-5 {
+  margin-right: 5px !important;
 }
 
 .text-bold {
@@ -131,4 +136,8 @@ body {
 
 .is-flex {
   display: flex;
+}
+.divider{
+  background-color: #808080;
+  height: 1px;
 }
