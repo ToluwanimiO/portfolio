@@ -8,7 +8,7 @@ import Contact from '../components/Contact.vue'
     <!-- <TheWelcome /> -->
     <!-- <img alt="Vue logo" class="about-me" src="@/assets/toluwanimi.jpg" width="125" height="125" /> -->
     <div class="home">
-      <img alt="Vue logo" class="smallview-image" src="@/assets/toluwanimi.jpg" width="200">
+      <img alt="Vue logo" class="smallview-image" src="@/assets/toluwanimi.jpg">
 
       <!-- <el-row>
         <el-col class="h-100" :span="4"></el-col>
@@ -41,6 +41,9 @@ import Contact from '../components/Contact.vue'
         margin: -4rem;
         display: flex;
     }
+     .smallview-image {
+        width:300px;
+    }
 }
 @media (max-width: 993px) {
     .home {
@@ -54,7 +57,7 @@ import Contact from '../components/Contact.vue'
         /* border-radius: 50%; */
     }
     .smallview-image {
-        /* border-radius: 50%; */
+        width:200px;
     }
 }
 /* display: inline-block;
