@@ -3,31 +3,37 @@
     <div class="is-flex justify-between w-100 mb-10">
       <span class="font-lg white">Toluwanimi Osuolale</span>
       <span>
-        <i class="fa fa"></i>
+        <i class="fa fa-download mr-5"></i>
         <a
           href="https://drive.google.com/file/d/1Khcz7Mj1MLkmRH8c_6NPNSMp3bspKkUW/view"
           target="_blank"
         >Download</a>
       </span>
     </div>
-    <div>
+    <!-- <div>
       <p>My passion lies in utilizing technology to address real-world challenges. With a solid understanding of Computer Science and Engineering principles and proficiency in programming languages such as JavaScript/TypeScript, React, Vue, and Angular, I am constantly seeking new and innovative opportunities to learn and apply my skills.</p>
       <br>
       <p>In addition to my academic pursuits, I have gained valuable experience working with startups, where I have made significant contributions to the development of products. From conceptualizing ideas to bringing them to life as functional products, I have been involved in the entire product lifecycle. Collaboration and knowledge sharing are integral to my work style, and I thoroughly enjoy working with a team.</p>
       <br>
       <p>I am thrilled to continue my journey of learning and growth as a front end developer. I eagerly look forward to applying my skills and knowledge to tackle challenging problems and make a positive impact on the world.</p>
+    </div> -->
+    <div>
+      <div class="heading">
+        <span class="mr-5">Skills</span>
+        <div class="w-100 divider"></div>
+      </div>
+      <p> <span class="white text-bold">Languages:</span> JavaScript, HTML/CSS</p>
+      <p><span class="white text-bold">Technologies:</span> React, Angular, Vue.js, Bootstrap</p>
+      <p><span class="white text-bold">Version Control:</span> GitHub</p>
     </div>
     <div>
-      <p>Skills</p>
-      <p>Languages: JavaScript, HTML/CSS</p>
-      <p>Technologies: React, Angular, Vue.js, Bootstrap</p>
-      <p>Version Control: GitHub</p>
-    </div>
-    <div>
-      <p>Experience</p>
+      <div class="heading mt-10">
+        <span class="mr-5">Experience</span>
+        <div class="w-100 divider"></div>
+      </div>
       <div>
-        <p>Edenlife Lagos, Nigeria</p>
-        <p>Front End Developer March 2022 - April 2023</p>
+        <p class="white text-bold">Edenlife Lagos, Nigeria</p>
+        <p class="white">Front End Developer March 2022 - April 2023</p>
         <ul>
           <li>Developed and maintained a Customer Relationship Management (CRM) application to handle day-to-day operations with the goal of achieving 95% month-on-month product retention and 25% growth.</li>
           <li>Led optimization efforts to improve speed across multiple products.</li>
@@ -37,16 +43,16 @@
         </ul>
       </div>
       <div>
-        <p>Crop2Cash Ibadan, Nigeria</p>
-        <p>Front End Developer January 2022 - March 2023</p>
+        <p class="white text-bold mt-10">Crop2Cash Ibadan, Nigeria</p>
+        <p class="white">Front End Developer January 2022 - March 2023</p>
         <ul>
           <li>Developed additional functionality for the internal web-based product utilized across departments using Vue, HTML, and CSS.</li>
           <li>Collaborated with other team members to come up with useful UI interfaces to implement.</li>
         </ul>
       </div>
       <div>
-        <p>The Gaxut Hub Ibadan, Nigeria</p>
-        <p>Front End Developer September 2021 - January 2022</p>
+        <p class="white text-bold mt-10">The Gaxut Hub Ibadan, Nigeria</p>
+        <p class="white">Front End Developer September 2021 - January 2022</p>
         <ul>
           <li>Assessed UI and UX designs for technical feasibility.</li>
           <li>Collaborated with product team members to meet project requirements, goals and desired functionality.</li>
@@ -57,7 +63,10 @@
       </div>
     </div>
     <div>
-      <p>Projects</p>
+       <div class="heading mt-10">
+        <span class="mr-5">Projects</span>
+        <div class="w-100 divider"></div>
+      </div>
       <p>
         Some selected projects can be found
         <RouterLink to="/projects">here</RouterLink>
@@ -71,6 +80,13 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <style>
+.heading{
+  font-size: 15px;
+  /* color:white; */
+  display: flex;
+  align-items: center;
+  margin-bottom:2px;
+}
 @media (min-width: 994px) {
   .resume {
     margin-top: 50px;
