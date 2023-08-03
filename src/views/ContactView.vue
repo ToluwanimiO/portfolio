@@ -1,5 +1,15 @@
 <template>
   <div class="contact">
+    <div class="loader-container" v-if="loading">
+      <el-progress
+        :text-inside="true"
+        :stroke-width="4"
+        :percentage="100"
+        status="success"
+        :indeterminate="true"
+        :duration="1"
+      />
+    </div>
     <el-form
       :model="form"
       label-position="top"
@@ -44,21 +54,21 @@ const rules = ref<FormRules>({
     {
       required: true,
       message: "Name is required",
-      trigger: "change",
+      trigger: "blur",
     },
   ],
    message: [
     {
       required: true,
       message: "Message is required",
-      trigger: "change",
+      trigger: "blur",
     },
   ],
   email: [
     {
       required: true,
       message: "Email address is required",
-      trigger: "change",
+      trigger: "blur",
     },
     {
       type: "email",
@@ -82,16 +92,25 @@ const sendMessage = async () => {
     loading.value = true
     console.log(form.value);
     const payload = form.value
-    axios.post("http://localhost:5000/send", payload)
+    axios.post("https://contact-form-portfolio-b1fb77d18153.herokuapp.com/send", payload)
     .then((response) => {
       console.log(response);
       loading.value = false
-      ElMessage.success(response.data)
+      form.value= {
+          name: '',
+          email: '',
+          message: ''
+      }
+      ElMessage({
+        message: response.data,
+        type: 'success',
+        duration:3000
+      })
     })
     .catch((error) => {
-            console.log(error);
+      console.log(error);
       loading.value = false
-       ElMessage.error(error.data)
+      ElMessage.error(error.message)
     });
   });
 };
@@ -110,13 +129,28 @@ const sendMessage = async () => {
 }
 .sendBtn {
     padding: 20px 5px;
-    color: black;
+    color: black !important;
     font-size: 15px;
 }
-.sendBtn:hover,
-.sendBtn:focus {
+.sendBtn:hover {
     background-color: #181818;
     border: solid 2px #81d4a7;
-    color: white;
+    color: white !important;
+}
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.el-progress.is-success .el-progress-bar__inner {
+    background-color: #81d4a7;
+}
+.el-message--success .el-message__content {
+    color: #81d4a7;
+}
+.el-message .el-message-icon--success {
+    color: #81d4a7;
 }
 </style>
