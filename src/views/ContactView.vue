@@ -45,7 +45,8 @@
 <script lang="ts" setup>
 import Vue from 'vue'
 import { ref } from 'vue'
-import { ElMessage, FormInstance, FormRules } from "element-plus";
+import { ElMessage } from "element-plus";
+import type { FormInstance, FormRules } from "element-plus";
 import axios from "axios";
 const formRef = ref<FormInstance>();
 
