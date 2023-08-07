@@ -56,10 +56,14 @@ const navRoutes = [
           :to="route.path"
         >{{route.text}}</RouterLink>
         <span class="white mt-50">Connect With Me</span>
-        <span>hello@toluwanimi.dev</span>
+        <!-- <a href="mailto:hello@toluwanimi.dev" target="_top"><span>hello@toluwanimi.dev</span></a> -->
         <div class="mt-10">
-          <i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;&nbsp;
-          <i class="fa fa-linkedin-square fa-2x">&nbsp;</i>
+          <a class="link-icon" href="https://github.com/ToluwanimiO" target="_blank">
+            <i class="fa fa-github fa-2x"></i>&nbsp;
+          </a>
+          <a class="link-icon" href="https://www.linkedin.com/in/toluwanimi-osuolale/">
+            <i class="fa fa-linkedin-square fa-2x">&nbsp;</i>
+          </a>
         </div>
       </div>
     </div>
@@ -72,6 +76,10 @@ const navRoutes = [
     overflow-y: hidden;
     height: 100vh;
 } */
+.link-icon {
+    display: inline !important;
+    font-size: inherit !important;
+}
 .line {
     border-top: 1px solid #818181;
 }
