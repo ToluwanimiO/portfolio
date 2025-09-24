@@ -14,6 +14,10 @@ const hoverStatus: any = ref({
 })
 const navRoutes = [
     {
+        path: '/',
+        text: 'HOME'
+    },
+    {
         path: '/resume',
         text: 'RESUME'
     },
@@ -21,10 +25,10 @@ const navRoutes = [
         path: '/projects',
         text: 'PROJECTS'
     },
-    {
-        path: '/contact',
-        text: 'CONTACT'
-    }
+    // {
+    //     path: '/contact',
+    //     text: 'CONTACT'
+    // }
 ]
 onMounted(() => {
     console.log(routeVar)

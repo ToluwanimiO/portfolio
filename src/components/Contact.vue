@@ -7,7 +7,7 @@
     <!-- <img alt="Vue logo" class="bg-logo" src="@/assets/toluwanimi.jpg" width="125" height="125" /> -->
     <!-- </div> -->
     <a href="https://github.com/ToluwanimiO" target="_blank"><i class="fa fa-github"></i>&nbsp;Github&nbsp;&nbsp;</a>
-    <a href="https://www.linkedin.com/in/toluwanimi-osuolale/"><i class="fa fa-linkedin-square">&nbsp;</i>LinkedIn</a>
+    <a href="https://www.linkedin.com/in/toluwanimi-osuolale/" target="_blank"><i class="fa fa-linkedin-square">&nbsp;</i>LinkedIn</a>
   </div>
 </template>
 
@@ -39,11 +39,11 @@ h3 {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    background-image: url('@/assets/toluwanimi.jpg');
+    /* background-image: url('@/assets/toluwanimi.png'); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #e9e3e3;
+    /* background-color: #e9e3e3; */
 }
 @media (min-width: 994px) {
     .greetings h1,
