@@ -27,16 +27,16 @@ const projects = [
     },
     {
         name: 'Our Eden Life',
-        description: 'Textbook recirculation system',
+        description: 'Company Website',
         languages: ['Vue.js', 'Nuxt.js', 'TypeScript'],
         liveUrl: 'https://ouredenlife.com/',
     },
     {
         name: 'SQI Forum',
-        description: 'Textbook recirculation system',
+        description: 'Forum for tech discussions',
         languages: ['Angular', 'TypeScript'],
         liveUrl: 'https://sqi-forum-app.netlify.app/',
-        codeUrl: 'Forum for tech discussions'
+        codeUrl: 'https://github.com/ToluwanimiO/SQI_Forum'
     },
     {
         name: 'Books For All',
@@ -59,14 +59,14 @@ const projects = [
         liveUrl: 'https://sokostore-front.netlify.app/',
         codeUrl: 'https://github.com/ToluwanimiO/sokoStore'
     },
-    {
-        name: 'GIPP',
-        description: 'Lagos State Graduate Internship Placement Programme',
-        languages: ['HTML', 'CSS', 'JavaScript', 'JQuery'],
-        liveUrl: 'https://gipplasg.lagosstate.gov.ng/',
-        codeUrl: '',
-        codeUrlHidden: 'https://github.com/walexanderos/gipp-alumni-fe'
-    },
+    // {
+    //     name: 'GIPP',
+    //     description: 'Lagos State Graduate Internship Placement Programme',
+    //     languages: ['HTML', 'CSS', 'JavaScript', 'JQuery'],
+    //     liveUrl: 'https://gipplasg.lagosstate.gov.ng/',
+    //     codeUrl: '',
+    //     codeUrlHidden: 'https://github.com/walexanderos/gipp-alumni-fe'
+    // },
     {
         name: 'Market List',
         description: 'Market list app for easy item management and status tracking',
