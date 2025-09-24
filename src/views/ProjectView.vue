@@ -26,11 +26,38 @@ const projects = [
         codeUrl: 'https://github.com/ToluwanimiO/portfolio'
     },
     {
+        name: 'Our Eden Life',
+        description: 'Textbook recirculation system',
+        languages: ['Vue.js', 'Nuxt.js', 'TypeScript'],
+        liveUrl: 'https://ouredenlife.com/',
+    },
+    {
+        name: 'SQI Forum',
+        description: 'Textbook recirculation system',
+        languages: ['Angular', 'TypeScript'],
+        liveUrl: 'https://sqi-forum-app.netlify.app/',
+        codeUrl: 'Forum for tech discussions'
+    },
+    {
+        name: 'Books For All',
+        description: 'Textbook recirculation system',
+        languages: ['Vue.js', 'TypeScript', 'NodeJS'],
+        liveUrl: 'https://books-for-all.netlify.app/',
+        codeUrl: 'https://github.com/ToluwanimiO/Books-For-All'
+    },
+    {
         name: 'The Gaxut Hub',
         description: 'E-learning and Freelancing Platform',
         languages: ['Vue.js', 'Django'],
         liveUrl: 'https://gaxut.netlify.app/',
         codeUrl: 'https://github.com/ToluwanimiO/Gaxut'
+    },
+    {
+        name: 'Soko Store',
+        description: 'Ecommerce demo store',
+        languages: ['React'],
+        liveUrl: 'https://sokostore-front.netlify.app/',
+        codeUrl: 'https://github.com/ToluwanimiO/sokoStore'
     },
     {
         name: 'GIPP',

@@ -8,13 +8,13 @@
         <span v-if="!(project.languages.length-1 == index)">+{{' '}}</span>
       </span>
     </span>
-    <a v-if="project.liveUrl" class="off-white" target="_blank" :href="project.liveUrl">
-      <span class="mr-10">
+    <a v-if="project.liveUrl" class="off-white-mid" target="_blank" :href="project.liveUrl">
+      <span class="mr-10 ">
         <i class="fa fa-eye"></i> Live
       </span>
     </a>
 
-    <a v-if="project.codeUrl" class="off-white" target="_blank" :href="project.codeUrl">
+    <a v-if="project.codeUrl" class="off-white-mid" target="_blank" :href="project.codeUrl">
       <span>
         <i class="fa fa-code-fork"></i> Code
       </span>

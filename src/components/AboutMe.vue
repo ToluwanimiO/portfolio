@@ -17,8 +17,8 @@ import { RouterLink } from 'vue-router'
 
     <div class="mt-20 mb-30 info">
       I'm a
-      <span class="white">Front End Developer</span> and
-      <span class="white">Computer Science Student</span> with passion for problem-solving, strong foundation in computer science principles and proven track record of delivering high-quality and scalable code.
+      <span class="white">Full Stack Developer</span> and
+      <span class="white">Computer Science Graduate </span> with passion for problem-solving, strong foundation in computer science principles and proven track record of delivering high-quality and scalable code.
     </div>
   </div>
 </template>

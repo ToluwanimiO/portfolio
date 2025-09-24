@@ -4,10 +4,8 @@
       <span class="font-lg white">Toluwanimi Osuolale</span>
       <span>
         <i class="fa fa-download mr-5"></i>
-        <a
-          href="https://drive.google.com/file/d/1Khcz7Mj1MLkmRH8c_6NPNSMp3bspKkUW/view"
-          target="_blank"
-        >Download</a>
+        <a href="https://drive.google.com/file/d/12HQasgeqDSRPTQzpyfF0WYwuv4HvzCzc/view?usp=drive_link"
+          target="_blank">Download</a>
       </span>
     </div>
     <!-- <div>
@@ -22,7 +20,7 @@
         <span class="mr-5">Skills</span>
         <div class="w-100 divider"></div>
       </div>
-      <p> <span class="white text-bold">Languages:</span> JavaScript, HTML/CSS</p>
+      <p> <span class="white text-bold">Languages:</span> JavaScript, HTML/CSS, Node.js, Firebase</p>
       <p><span class="white text-bold">Technologies:</span> React, Angular, Vue.js, Bootstrap</p>
       <p><span class="white text-bold">Version Control:</span> GitHub</p>
     </div>
@@ -32,21 +30,42 @@
         <div class="w-100 divider"></div>
       </div>
       <div>
-        <p class="white text-bold">Edenlife Lagos, Nigeria</p>
+        <p class="white text-bold">SQI College of ICT, Ogbomoso, Nigeria</p>
+        <p class="white">Software Engineering Intern June 2023 - June 2024</p>
+        <ul>
+          <li>Taught introductory web development courses in HTML, JavaScript, and Vue.js, providing individualized
+            support to software engineering students struggling with the material, resulting in a 100% success rate in
+            the test results.</li>
+          <li>Led engaging group discussions and encouraged hands-on activities in summer coding classes for young
+            children, fostering a fun and stimulating learning environment.</li>
+          <li>Led a six-person team in the development of an exhibition web app using React.js and Node.js, overseeing
+            task assignments, progress tracking, and successful project completion.
+          </li>
+          <li>Integrated real-time hand gesture recognition system using TensorFlow.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="white text-bold mt-10">Edenlife Lagos, Nigeria</p>
         <p class="white">Front End Developer March 2022 - April 2023</p>
         <ul>
-          <li>Developed and maintained a Customer Relationship Management (CRM) application to handle day-to-day operations with the goal of achieving 95% month-on-month product retention and 25% growth.</li>
+          <li>Developed and maintained a Customer Relationship Management (CRM) application to handle day-to-day
+            operations with the goal of achieving 95% month-on-month product retention and 25% growth.</li>
           <li>Led optimization efforts to improve speed across multiple products.</li>
-          <li>Coached and mentored Frontend Engineers, helping them understand certain contexts particular to each product.</li>
-          <li>Worked with five departments to deliver software solutions for improved productivity and day-to-day operations management.</li>
-          <li>Developed a product-led growth web dashboard, with the goal of achieving 95% month-on-month adoption rate, 95% month-on-month retention and acquiring 150 corporates with 7000 users as the sole front-end developer.</li>
+          <li>Coached and mentored Frontend Engineers, helping them understand certain contexts particular to each
+            product.</li>
+          <li>Worked with five departments to deliver software solutions for improved productivity and day-to-day
+            operations management.</li>
+          <li>Developed a product-led growth web dashboard, with the goal of achieving 95% month-on-month adoption rate,
+            95% month-on-month retention and acquiring 150 corporates with 7000 users as the sole front-end developer.
+          </li>
         </ul>
       </div>
       <div>
         <p class="white text-bold mt-10">Crop2Cash Ibadan, Nigeria</p>
         <p class="white">Front End Developer January 2022 - March 2023</p>
         <ul>
-          <li>Developed additional functionality for the internal web-based product utilized across departments using Vue, HTML, and CSS.</li>
+          <li>Developed additional functionality for the internal web-based product utilized across departments using
+            Vue, HTML, and CSS.</li>
           <li>Collaborated with other team members to come up with useful UI interfaces to implement.</li>
         </ul>
       </div>
@@ -56,14 +75,16 @@
         <ul>
           <li>Assessed UI and UX designs for technical feasibility.</li>
           <li>Collaborated with product team members to meet project requirements, goals and desired functionality.</li>
-          <li>Enhanced user experience and accomplished webpage objectives by creating site structure, page optimization, and graphics integration.</li>
-          <li>Migrated a multi-page user experience into a single page app thus increasing levels of interactivity and user satisfaction.</li>
+          <li>Enhanced user experience and accomplished webpage objectives by creating site structure, page
+            optimization, and graphics integration.</li>
+          <li>Migrated a multi-page user experience into a single page app thus increasing levels of interactivity and
+            user satisfaction.</li>
           <li>Implemented enhancements that improved web functionality and responsiveness by 40%.</li>
         </ul>
       </div>
     </div>
     <div>
-       <div class="heading mt-10">
+      <div class="heading mt-10">
         <span class="mr-5">Projects</span>
         <div class="w-100 divider"></div>
       </div>
@@ -80,20 +101,20 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <style>
-.heading{
+.heading {
   font-size: 15px;
   /* color:white; */
   display: flex;
   align-items: center;
-  margin-bottom:2px;
+  margin-bottom: 2px;
 }
+
 @media (min-width: 994px) {
   .resume {
     margin-top: 50px;
     background-color: #252527b7;
     padding: 20px;
-
-    height: 100vh;
+    height: 90vh;
     /* display: flex; */
     /* align-items: center; */
     overflow-y: auto;
@@ -102,6 +123,7 @@ import { RouterLink } from 'vue-router'
     /* Invisible scrollbar for In Firefox */
     scrollbar-width: none;
   }
+
   /* Invisible scrollbar for In Chrome, Safari, Opera, and other WebKit-based browsers */
   .resume::-webkit-scrollbar {
     display: none;
