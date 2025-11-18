@@ -16,7 +16,8 @@
 
     <a v-if="project.codeUrl" class="off-white-mid" target="_blank" :href="project.codeUrl">
       <span>
-        <i class="fa fa-code-fork"></i> Code
+        <!-- <i class="fa fa-code-fork"></i> -->
+         Code
       </span>
     </a>
   </div>

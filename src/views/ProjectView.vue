@@ -1,35 +1,37 @@
 <template>
-  <div class="project">
-    <!-- do projects in such a way that I can update the items in the project without redploying my code and edit or delete previous codes -->
-    <el-row>
-      <el-col
-        class="display-grid"
-        v-for="(project,index) in projects"
-        :key="index"
-        :span="24"
-        :md="12"
-      >
-        <Project :project="project"/>
-      </el-col>
-    </el-row>
-  </div>
+    <div class="project">
+        <!-- do projects in such a way that I can update the items in the project without redploying my code and edit or delete previous codes -->
+        <el-row>
+            <el-col class="display-grid" v-for="(project, index) in projects" :key="index" :span="24" :md="12">
+                <Project :project="project" />
+            </el-col>
+        </el-row>
+    </div>
 </template>
 <script lang="ts" setup>
-import Vue, { ref } from 'vue'
+// import Vue, { ref } from 'vue'
 import Project from '../components/Project.vue'
 const projects = [
     {
-        name: 'toluwanimi-portfolio',
-        description: 'My Porfolio Website',
-        languages: ['Vue.js', 'TypeScript', 'NodeJS'],
-        liveUrl: 'https://toluwanimi-portfolio.netlify.app/',
-        codeUrl: 'https://github.com/ToluwanimiO/portfolio'
+        name: 'Smart Church',
+        description: 'Church Management Solution',
+        languages: ['Vue.js'],
+        liveUrl: 'https://www.smartchurch.ng/',
+        codeUrl: '',
+        codeUrlHidden: 'https://github.com/Daveshoope/smartchurch-user-v3'
     },
     {
         name: 'Our Eden Life',
         description: 'Company Website',
         languages: ['Vue.js', 'Nuxt.js', 'TypeScript'],
         liveUrl: 'https://ouredenlife.com/',
+    },
+    {
+        name: 'toluwanimi-portfolio',
+        description: 'My Porfolio Website',
+        languages: ['Vue.js', 'TypeScript', 'NodeJS'],
+        liveUrl: 'https://toluwanimi-portfolio.netlify.app/',
+        codeUrl: 'https://github.com/ToluwanimiO/portfolio'
     },
     {
         name: 'SQI Forum',
@@ -67,28 +69,28 @@ const projects = [
     //     codeUrl: '',
     //     codeUrlHidden: 'https://github.com/walexanderos/gipp-alumni-fe'
     // },
-    {
-        name: 'Market List',
-        description: 'Market list app for easy item management and status tracking',
-        languages: ['React.js', 'CSS'],
-        liveUrl: 'https://marketlist-organizer.netlify.app/',
-        codeUrl: 'https://github.com/ToluwanimiO/marketList'
-    },
-    {
-        name: 'To Do List',
-        description: 'To-do list app',
-        languages: ['BootStrap', 'Vue.js'],
-        liveUrl: 'https://planned-todo.netlify.app/',
-        codeUrl: 'https://github.com/ToluwanimiO/todoList'
-    },
+    // {
+    //     name: 'Market List',
+    //     description: 'Market list app for easy item management and status tracking',
+    //     languages: ['React.js', 'CSS'],
+    //     liveUrl: 'https://marketlist-organizer.netlify.app/',
+    //     codeUrl: 'https://github.com/ToluwanimiO/marketList'
+    // },
+    // {
+    //     name: 'To Do List',
+    //     description: 'To-do list app',
+    //     languages: ['BootStrap', 'Vue.js'],
+    //     liveUrl: 'https://planned-todo.netlify.app/',
+    //     codeUrl: 'https://github.com/ToluwanimiO/todoList'
+    // },
 
-    {
-        name: 'Choice Coin',
-        description: 'Voting System using Choice Coin',
-        languages: ['JavaScript', 'React.js'],
-        liveUrl: 'https://choice-coin-voting.netlify.app/',
-        codeUrl: 'https://github.com/ToluwanimiO/choice-coin-voting'
-    }
+    // {
+    //     name: 'Choice Coin',
+    //     description: 'Voting System using Choice Coin',
+    //     languages: ['JavaScript', 'React.js'],
+    //     liveUrl: 'https://choice-coin-voting.netlify.app/',
+    //     codeUrl: 'https://github.com/ToluwanimiO/choice-coin-voting'
+    // }
 ]
 </script>
 
@@ -96,6 +98,7 @@ const projects = [
 .display-grid {
     display: grid;
 }
+
 @media (min-width: 994px) {
     .project {
         height: 100vh;
@@ -107,6 +110,7 @@ const projects = [
         /* Invisible scrollbar for In Firefox */
         scrollbar-width: none;
     }
+
     /* Invisible scrollbar for In Chrome, Safari, Opera, and other WebKit-based browsers */
     .project::-webkit-scrollbar {
         display: none;
