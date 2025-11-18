@@ -54,13 +54,13 @@ const projects = [
         liveUrl: 'https://gaxut.netlify.app/',
         codeUrl: 'https://github.com/ToluwanimiO/Gaxut'
     },
-    {
-        name: 'Soko Store',
-        description: 'Ecommerce demo store',
-        languages: ['React'],
-        liveUrl: 'https://sokostore-front.netlify.app/',
-        codeUrl: 'https://github.com/ToluwanimiO/sokoStore'
-    },
+    // {
+    //     name: 'Soko Store',
+    //     description: 'Ecommerce demo store',
+    //     languages: ['React'],
+    //     liveUrl: 'https://sokostore-front.netlify.app/',
+    //     codeUrl: 'https://github.com/ToluwanimiO/sokoStore'
+    // },
     // {
     //     name: 'GIPP',
     //     description: 'Lagos State Graduate Internship Placement Programme',
