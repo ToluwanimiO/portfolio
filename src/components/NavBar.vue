@@ -25,10 +25,10 @@ const navRoutes = [
         path: '/resume',
         text: 'Resume'
     },
-    {
-        path: '/contact',
-        text: 'Contact'
-    }
+    // {
+    //     path: '/contact',
+    //     text: 'Contact'
+    // }
 ]
 // const closeNav = () => {
 //     state.value = !state.value
