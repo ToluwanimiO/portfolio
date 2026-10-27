@@ -13,6 +13,13 @@
 import Project from '../components/Project.vue'
 const projects = [
     {
+        name: '100 Days Building',
+        description: 'Ongoing challenge to build different solutions',
+        languages: ['React.js', 'TypeScript'],
+        liveUrl: 'http://100daysbuilding.netlify.app/',
+        codeUrl: '',
+    },
+    {
         name: 'Smart Church',
         description: 'Church Management Solution',
         languages: ['Vue.js'],
